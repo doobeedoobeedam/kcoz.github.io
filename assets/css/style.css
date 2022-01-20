@@ -9,17 +9,6 @@ html {
     --secondary: #fdfdfd;
 }
 
-.sidebar {
-    position: absolute;
-    top: 250px;
-    right: 0;
-    background-color: #fff;
-}
-
-.sidebar i {
-    color: var(--primary);
-}
-
 img {
     opacity: 1;
     -webkit-transition: .3s ease-in-out;
@@ -28,31 +17,6 @@ img {
 
 img:hover {
     opacity: .85;
-}
-
-.logo {
-    background-color: var(--primary);
-    color: #fff;
-    padding: 0.5px;
-}
-
-.logo-main {
-    font-size: 35px;
-    display: block;
-    margin: 20px auto;
-    font-family: 'Pacifico', cursive;
-}
-
-.navbar {
-    /* border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px; */
-    background-color: var(--primary);
-    position: static;
-    top: 0;
-}
-
-.navbar .navbar-brand:first-child {
-    display: none;
 }
 
 .btn {
@@ -85,9 +49,49 @@ img:hover {
     margin: 180px 0;
 }
 
+
+/* SIDEBAR */
+
+.sidebar {
+    position: absolute;
+    top: 250px;
+    right: 0;
+    background-color: #fff;
+}
+
+.sidebar i {
+    color: var(--primary);
+}
+
+/* NAVBAR */
+
+.logo {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 0.5px;
+}
+
+.navbar-brand {
+    /* font-size: 35px; */
+    display: block;
+    /* margin: 20px auto; */
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar {
+    background-color: var(--primary);
+    position: static;
+    top: 0;
+}
+
+.navbar-brand:first-child {
+    display: none;
+}
+
+/* HERO */
+
 .hero {
-    padding-top: 90px;
-    /* min-height: 90vh; */
+    padding-top: 60px;
 }
 
 .hero img {
@@ -97,6 +101,8 @@ img:hover {
     padding: .5em;
     border: 1px var(--primary) solid;
 }
+
+/* PORTFOLIOS */
 
 .portfolios .card {
     top: 8px;
@@ -137,7 +143,7 @@ img:hover {
     padding: 20px 14px;
 }
 
-.card-content a {
+.portfolios .card-content a {
     text-decoration: none;
     color: #202927;
 }
@@ -151,7 +157,7 @@ img:hover {
     color: rgba(32, 41, 28, .8);
 }
 
-/* Owl Carousel */
+/* PORTFOLIOS - Owl Carousel */
 .owl-carousel .owl-nav button {
     position: absolute;
     color: #666666 !important;
@@ -188,66 +194,7 @@ img:hover {
     transform: translateX(-50%);
 }
 
-.tech i {
-    color: var(--primary);
-}
-
-
-@media screen and (max-width: 576px) {
-    .sidebar {
-        display: none;
-    }
-
-    .navbar .navbar-brand:first-child {
-        display: contents;
-    }
-
-    .navbar {
-        border-radius: 0;
-        background-color: var(--primary);
-        position: static;
-        top: 0;
-    }
-
-    .navbar-logo {
-        display: none;
-    }
-
-    .owl-carousel .owl-nav button.owl-previous {
-        left: 10px;
-    }
-
-    .owl-carousel .owl-nav button.owl-next {
-        left: auto;
-        right: 10px;
-    }
-
-    .experiences .wrapper {
-        margin-top: 40px;
-    }
-}
-
-footer {
-    background-color: var(--secondary);
-}
-
-footer i {
-    padding: 12px;
-    background-color: #f8f8f8;
-    border-radius: 50%;
-    color: var(--primary);
-    transition: .3s;
-}
-
-footer a,
-footer nav-link {
-    color: #202927 !important;
-}
-
-footer .social a:hover i {
-    background-color: var(--primary);
-    color: #fff;
-}
+/* SERVICES */
 
 .service span {
     color: #666666;
@@ -261,24 +208,6 @@ footer .social a:hover i {
     overflow: visible;
     position: relative;
 }
-
-/* .progress:after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #fff;
-    position: absolute;
-    top: -5px;
-    left: 0;
-    z-index: 1;
-}
-
-.progress:after{
-    border: 7px solid #e9e9ea;
-    left: auto;
-    right: 0;
-} */
 
 .progress .progress-bar {
     background-color: var(--primary);
@@ -302,6 +231,11 @@ footer .social a:hover i {
     }
 }
 
+.tech i {
+    color: var(--primary);
+}
+
+/* EXPERIENCES */
 
 .experiences .StepProgress {
     position: relative;
@@ -370,6 +304,84 @@ footer .social a:hover i {
     color: #999;
     font-weight: normal;
 }
+
+
+/* FOOTER  */
+
+footer {
+    background-color: var(--secondary);
+}
+
+footer i {
+    padding: 12px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    color: var(--primary);
+    transition: .3s;
+}
+
+footer a,
+footer nav-link {
+    color: #202927 !important;
+}
+
+footer .social a:hover i {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+
+/* BREAKPOINT RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    .navbar-logo {
+        display: none;
+    }
+
+    .navbar .navbar-brand:first-child {
+        display: contents;
+    }
+
+    .experiences .wrapper {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sidebar {
+        display: none;
+    }
+
+    .navbar {
+        border-radius: 0;
+        background-color: var(--primary);
+        position: static;
+        top: 0;
+    }
+
+    .navbar .navbar-brand:first-child {
+        display: contents;
+    }
+
+    .navbar-logo {
+        display: none;
+    }
+
+    .owl-carousel .owl-nav button.owl-previous {
+        left: 10px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        left: auto;
+        right: 10px;
+    }
+
+    .experiences .wrapper {
+        margin-top: 40px;
+    }
+}
+
+/* SCROLL TO TOP */
 
 #scrollToTop {
     display: none;
