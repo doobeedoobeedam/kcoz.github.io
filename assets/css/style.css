@@ -46,7 +46,8 @@ img:hover {
 }
 
 .section {
-    margin: 180px 0;
+    /* margin: 180px 0; */
+    padding: 160px 0;
 }
 
 
@@ -96,6 +97,7 @@ img:hover {
 
 .hero img {
     height: 454px;
+    /* width: 300px; */
     border-top-left-radius: 120px;
     border-top-right-radius: 120px;
     padding: .5em;
@@ -314,7 +316,7 @@ footer {
 
 footer i {
     padding: 12px;
-    background-color: #f8f8f8;
+    background-color: #f5f5f5;
     border-radius: 50%;
     color: var(--primary);
     transition: .3s;
@@ -333,7 +335,7 @@ footer .social a:hover i {
 
 /* BREAKPOINT RESPONSIVE */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
     .navbar-logo {
         display: none;
     }

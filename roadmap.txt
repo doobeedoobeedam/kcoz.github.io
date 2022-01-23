@@ -1,0 +1,5 @@
+- icon offline
+- bootstrap offline
+- new logo
+- ubah data dummy jadi yg lebih look a pro
+- edit template project
