@@ -335,7 +335,7 @@ footer .social a:hover i {
 
 /* BREAKPOINT RESPONSIVE */
 
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 815px) {
     .navbar-logo {
         display: none;
     }
