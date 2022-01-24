@@ -6,7 +6,13 @@ html {
 
 :root {
     --primary: #F6B0BB;
-    --secondary: #fdfdfd;
+    --secondary: #fcfcfc;
+    --tertiary: #ccc;
+    --quaternary: #999;
+    --senary: #f5f5f5;
+    --septenary: #fff;
+    --octonary: #000;
+    --nonary: #202927;
 }
 
 img {
@@ -22,7 +28,7 @@ img:hover {
 .btn {
     border: var(--primary) 2px solid;
     background-color: var(--primary);
-    color: #fff;
+    color: var(--septenary);
     transition: .3s;
 }
 
@@ -33,7 +39,7 @@ img:hover {
 
 .title span::after {
     content: " \00B0";
-    color: #000;
+    color: var(--octonary);
 }
 
 .title:before {
@@ -46,7 +52,6 @@ img:hover {
 }
 
 .section {
-    /* margin: 180px 0; */
     padding: 160px 0;
 }
 
@@ -57,7 +62,7 @@ img:hover {
     position: absolute;
     top: 250px;
     right: 0;
-    background-color: #fff;
+    background-color: var(--septenary);
 }
 
 .sidebar i {
@@ -68,14 +73,12 @@ img:hover {
 
 .logo {
     background-color: var(--primary);
-    color: #fff;
+    color: var(--septenary);
     padding: 0.5px;
 }
 
 .navbar-brand {
-    /* font-size: 35px; */
     display: block;
-    /* margin: 20px auto; */
     font-family: 'Pacifico', cursive;
 }
 
@@ -97,7 +100,6 @@ img:hover {
 
 .hero img {
     height: 454px;
-    /* width: 300px; */
     border-top-left-radius: 120px;
     border-top-right-radius: 120px;
     padding: .5em;
@@ -115,12 +117,10 @@ img:hover {
     position: relative;
     height: 150px;
     width: 100%;
-    background-color: #fff;
-    /* transition: opacity 0.2s ease; */
+    background-color: var(--septenary);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: grayscale(100%);
 }
 
 .portfolios .card:hover {
@@ -129,10 +129,6 @@ img:hover {
 
 .portfolios .card:hover .card-content {
     border-top: 5px solid var(--primary);
-}
-
-.portfolios .card:hover .card-img {
-    filter: grayscale(0%);
 }
 
 .portfolios .card-content {
@@ -147,7 +143,7 @@ img:hover {
 
 .portfolios .card-content a {
     text-decoration: none;
-    color: #202927;
+    color: var(--nonary);
 }
 
 .portfolios .card-content a p {
@@ -156,13 +152,13 @@ img:hover {
     /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
-    color: rgba(32, 41, 28, .8);
+    color: var(--nonary);
 }
 
 /* PORTFOLIOS - Owl Carousel */
 .owl-carousel .owl-nav button {
     position: absolute;
-    color: #666666 !important;
+    color: var(--tertiary) !important;
     left: -35px;
     top: 50%;
 }
@@ -173,13 +169,13 @@ img:hover {
 }
 
 .owl-carousel .owl-nav button:hover {
-    color: #000;
+    color: var(--octonary);
 }
 
 .owl-carousel .owl-dots button {
     width: 10px;
     height: 10px;
-    background: #666666;
+    background: var(--tertiary);
     display: inline-block;
     margin: 5px;
     border-radius: 50%;
@@ -199,12 +195,12 @@ img:hover {
 /* SERVICES */
 
 .service span {
-    color: #666666;
+    color: var(--quaternary);
 }
 
 .progress {
     height: 10px;
-    background: #e9e9ea;
+    background: var(--senary);
     border-radius: 15px;
     margin-bottom: 30px;
     overflow: visible;
@@ -239,13 +235,13 @@ img:hover {
 
 /* EXPERIENCES */
 
-.experiences .StepProgress {
+.experiences .stepprogress {
     position: relative;
     padding-left: 45px;
     list-style: none;
 }
 
-.experiences .StepProgress::before {
+.experiences .stepprogress::before {
     display: inline-block;
     content: '';
     position: absolute;
@@ -253,19 +249,19 @@ img:hover {
     left: 15px;
     width: 10px;
     height: 100%;
-    border-left: 2px solid #CCC;
+    border-left: 2px solid var(--tertiary);
 }
 
-.experiences .StepProgress-item {
+.experiences .stepprogress-item {
     position: relative;
     counter-increment: list;
 }
 
-.experiences .StepProgress-item:not(:last-child) {
+.experiences .stepprogress-item:not(:last-child) {
     padding-bottom: 20px;
 }
 
-.experiences .StepProgress-item::before {
+.experiences .stepprogress-item::before {
     display: inline-block;
     content: '';
     position: absolute;
@@ -274,7 +270,7 @@ img:hover {
     width: 10px;
 }
 
-.experiences .StepProgress-item::after {
+.experiences .stepprogress-item::after {
     content: '';
     display: inline-block;
     position: absolute;
@@ -299,11 +295,11 @@ img:hover {
 }
 
 .experiences .experience-title .place a:hover {
-    color: #666666;
+    color: var(--tertiary);
 }
 
 .experiences .experience-title .year {
-    color: #999;
+    color: var(--quaternary);
     font-weight: normal;
 }
 
@@ -316,7 +312,7 @@ footer {
 
 footer i {
     padding: 12px;
-    background-color: #f5f5f5;
+    background-color: var(--senary);
     border-radius: 50%;
     color: var(--primary);
     transition: .3s;
@@ -324,12 +320,12 @@ footer i {
 
 footer a,
 footer nav-link {
-    color: #202927 !important;
+    color: var(--octonary) !important;
 }
 
 footer .social a:hover i {
     background-color: var(--primary);
-    color: #fff;
+    color: var(--septenary);
 }
 
 
@@ -361,14 +357,6 @@ footer .social a:hover i {
         top: 0;
     }
 
-    .navbar .navbar-brand:first-child {
-        display: contents;
-    }
-
-    .navbar-logo {
-        display: none;
-    }
-
     .owl-carousel .owl-nav button.owl-previous {
         left: 10px;
     }
@@ -376,10 +364,6 @@ footer .social a:hover i {
     .owl-carousel .owl-nav button.owl-next {
         left: auto;
         right: 10px;
-    }
-
-    .experiences .wrapper {
-        margin-top: 40px;
     }
 }
 
@@ -393,12 +377,12 @@ footer .social a:hover i {
     z-index: 99;
     border: none;
     background-color: var(--primary);
-    color: white;
+    color: var(--septenary);
     cursor: pointer;
     padding: 6px;
     border-radius: 6px;
 }
 
 #scrollToTop:hover {
-    background-color: #CCC;
+    background-color: var(--tertiary);
 }
