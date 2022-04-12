@@ -1,6 +1,1 @@
-- icon offline (boxicons belum offline) (laravel belum berubah warna)
-- bootstrap offline (done)
-- new logo
-- ubah data dummy jadi yg lebih look a pro (tinggal my services dan my project)
-- edit template project
-- add meta desc and meta keyword
+- ubah data dummy jadi yg lebih look a pro (my project)
